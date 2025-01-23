@@ -28,7 +28,7 @@ jobs:
         set -ex
         
         # Pull latest build of pimcore's image
-        docker pull docker.io/pimcore/pimcore:php8.2-latest
+        docker pull docker.io/pimcore/pimcore:php8.3-latest
 
     - name: Create project from skeleton in latest pimcore environment
       run: |
