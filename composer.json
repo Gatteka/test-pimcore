@@ -1,7 +1,7 @@
 {
   "name": "pimcore/skeleton",
   "type": "project",
-  "license": "GPL-3.0-or-later",
+  "license": "proprietary",
   "config": {
     "optimize-autoloader": true,
     "sort-packages": true,
