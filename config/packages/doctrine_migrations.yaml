@@ -1,0 +1,8 @@
+# config/packages/doctrine_migrations.yaml
+
+doctrine_migrations:
+    migrations_paths:
+        'Test\Migrations': '%kernel.project_dir%/src/Test/Migrations'
+
+    # Connection to use for the migrations
+    connection: default
