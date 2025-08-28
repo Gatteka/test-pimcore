@@ -1,5 +1,5 @@
 parameters:
-    secret: ThisTokenIsNotSoSecretChangeItImmediately
+    secret: 8qHqYRZIH6HO7QbDMhE4IlmXc6eSVYiejoj/Wpjn2uc=
 
     # customize the full path to external executables
     # normally they are auto-detected by `which program` or auto-discovered in the configured path in
@@ -59,6 +59,12 @@ services:
         resource: '../src/Command/*'
         tags: [ 'console.command' ]
 
+    
+    Test\Services\CustomMailer:
+        decorates: 'mailer'
+        arguments:
+            $inner: '@Test\Services\CustomMailer.inner'
+            $logger: '@logger'
 
 
     # Example custom templating helper
